@@ -1,0 +1,10 @@
+﻿
+<div class="text-center">
+    <h1 class="display-4">Welcome @ViewData["User"] !</h1>
+    <h2 class="display-4">@ViewData["CarInfo"]</h2>
+    <h2 class="display-4">@ViewData["AdultInfo"]</h2>
+</div>
+@Html.ActionLink("John", "Index", "Home", new { Name = "John", Age = 15, HasDrivingLicence = false })
+@Html.ActionLink("Mary", "Index", "Home", new { Name = "Mary", Age = 34, HasDrivingLicence = true })
+@Html.ActionLink("Ben", "Index", "Home", new { Name = "Ben", Age = 55, HasDrivingLicence = false })
+@Html.ActionLink("Jane", "Index", "Home", new { Name = "Jane", Age = 19, HasDrivingLicence = true })
