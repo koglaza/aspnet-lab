@@ -1,0 +1,14 @@
+﻿@model CarViewModel
+@{
+    if (ViewBag.Message != null)
+    {
+        <div>
+            @ViewBag.Message
+        </div>
+    }
+}
+<hr />
+<label asp-for="@Model.Brand"></label> : @Model.Brand  <br />
+<label asp-for="@Model.Model"></label> : @Model.Model <br />
+<label asp-for="@Model.TopSpeed"></label> : @Model.TopSpeed <br />
+
