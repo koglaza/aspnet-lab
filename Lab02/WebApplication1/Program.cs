@@ -24,4 +24,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(name: "cars_shortcut",
+                pattern: "moto",
+                defaults: new { controller = "Car", action = "List" });
+
 app.Run();

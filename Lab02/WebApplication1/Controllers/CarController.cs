@@ -17,6 +17,7 @@ namespace WebApplication1.Controllers
             return View("Info", viewModel);
         }
         [HttpGet]
+        [Route("/browse")]
         public IActionResult List()
         {
             List<CarViewModel> list = new List<CarViewModel>();
